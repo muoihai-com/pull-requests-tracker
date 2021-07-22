@@ -5,9 +5,96 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  width: 600px;
+  height: 600px;
+  font-size: 14px;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.App {
+  border: 1px solid rgb(246, 248, 250);
+  border-radius: 5px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.ml-1 {
+  margin-left: 0.5em;
+}
+
+.ml-2 {
+  margin-left: 1em;
+}
+
+.btn {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 1px solid;
+  border-radius: 6px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 20px;
+  padding: 5px 12px;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.btn-primary {
+  background-color: #2ea44f;
+  color: #fff;
+}
+
+.btn-sub {
+  background-color: #fff;
+  color: #333;
+  border: 1px solid rgb(233, 238, 240);
+}
+
+.input {
+  padding: 0.5em;
+  border: 1px solid rgb(233, 238, 240);
+}
+
+.list .item {
+  padding: 0.5em 0;
+  border-top: 1px solid rgb(233, 238, 240);
+}
+
+.list .item .status {
+  text-align: center;
+  width: 100px;
+}
+
+.list .item .tool {
+  justify-self: center;
+  width: 150px;
+}
+
+.list .item .title {
+  width: 350px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
