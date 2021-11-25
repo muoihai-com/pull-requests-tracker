@@ -14,7 +14,7 @@ function getData() {
   const statusSelector = document.querySelector("#partial-discussion-header span.State")
   if(statusSelector) status = statusSelector.innerText.trim()
 
-  const nameSelector = document.querySelector("#partial-discussion-header a.author")
+  const nameSelector = document.querySelector("div.timeline-comment-header a.author")
   if (nameSelector) nameActive = nameSelector.innerText.trim()
 
   return {
@@ -25,5 +25,9 @@ function getData() {
     nameActive
   }
 }
+
+window.addEventListener('focus', function() {
+  chrome.runtime.sendMessage(getData())  
+})
 
 chrome.runtime.sendMessage(getData())

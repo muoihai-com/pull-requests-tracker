@@ -71,7 +71,9 @@ function App() {
               {item.title}
             </div>
             <div className="flex tool">
-              <a href={`https://github.com${item.pathname}`} target="_blank" rel="noreferrer"><button className="btn btn-sub">Open in new tab</button></a>
+              <a href={`https://github.com${item.pathname}`} target="_blank" rel="noreferrer">
+                <button className="btn btn-sub">Open in new tab</button>
+              </a>
             </div>
           </div>
         })}
